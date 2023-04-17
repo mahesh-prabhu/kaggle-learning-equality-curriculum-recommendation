@@ -1,0 +1,25 @@
+ipykernel
+#ipywidgets # Added because tqdm issued warning to update jupyter & ipywidgets. Fix from https://github.com/CosmiQ/solaris/issues/392
+numpy
+pandas
+matplotlib
+tqdm
+transformers[tf,torch,sentencepiece,vision,optuna,sklearn,onnxruntime, accelerate]
+cupy-cuda117 # don't install 'cupy' since it builds from source and takes a long time. If you specify the cuda version, in our case 11.7, it installs prebuilt binaries. See https://stackoverflow.com/questions/72709380/cupy-whats-the-difference-between-pip-install-cupy-and-pip-install-cupy-cuda
+#cuml
+pyarrow
+#dask[diagnostics]
+pylru
+torchsummary
+networkx
+seaborn
+# Below are needing Sebastian Rascka's bert training using lightning
+datasets
+lightning
+watermark
+fastparquet
+dataclasses
+pynvml
+nbdime
+ipython_genutils
+sentence_transformers
